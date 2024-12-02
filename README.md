@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# termProject
+Here is a mini-game collection where you can choose and enjoy one of three exciting games:
+1. Rock-Paper-Scissors
+2. Number Guessing Game
+3. Word Guessing Game
+Have fun exploring and playing these simple yet entertaining games!
+>>>>>>> 184f9e0b9902622ec26e09ca6a27252b49130814
