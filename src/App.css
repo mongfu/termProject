@@ -1,38 +1,137 @@
-.App {
+/* 전체 레이아웃 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #fff9c4, #ffe57f); /* 노란색 그라데이션 */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 90%;
+  max-width: 800px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  overflow: hidden;
+}
+
+/* 헤더 스타일 */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #fbc02d; /* 진한 노란색 */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #03a9f4;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* 버튼 스타일 */
+button {
+  padding: 12px 20px;
+  margin: 10px 5px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #fdd835, #fbc02d); /* 노란 버튼 */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #f9a825, #fdd835);
+  transform: scale(1.1);
+}
+
+button:active {
+  background: #f57f17;
+  transform: scale(0.9);
+}
+
+/* 카드 스타일 */
+.card {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3); /* 연한 노란색 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card h2 {
+  color: #fdd835; /* 노란색 강조 */
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* 점수판 스타일 */
+.leaderboard {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fffde7, #fff9c4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leaderboard h2 {
+  font-size: 1.8rem;
+  color: #fbc02d;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leaderboard ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leaderboard li {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  background: #fffbf0;
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.leaderboard li:nth-child(1) {
+  background: linear-gradient(135deg, #fff9c4, #ffd54f);
+  font-weight: bold;
+  color: #e65100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leaderboard li:nth-child(2) {
+  background: linear-gradient(135deg, #f0f4c3, #cddc39);
+  font-weight: bold;
+  color: #827717;
+}
+
+.leaderboard li:nth-child(3) {
+  background: linear-gradient(135deg, #ffe082, #ffb74d);
+  font-weight: bold;
+  color: #e64a19;
 }
